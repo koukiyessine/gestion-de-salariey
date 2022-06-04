@@ -1,0 +1,41 @@
+<html>
+<head><title></title></head>
+<body bgcolor="#808080">
+<script language="javascript">
+function verif()
+{
+var ar=document.f1.mat.value;
+var at=document.f1.post.selectedIndex;
+
+if(ar=="")
+{
+alert("ecrire dans votre champs");
+}
+
+if(at<= 1)
+{
+alert("please selectionner votre post");
+}
+
+if(isNaN(ar)==false)
+{
+alert("cette champs contient une chaine ");
+}
+}
+
+</script>
+<center><font size="500" style="arial" color="red">categorie</font></center>
+<p></p>
+<form action="" name="f1" method="post">
+<table align="center" cellpadding="10" cellspacing="10">
+<tr><th><b>Matricule :</td><td><input type="text" name="mat" size="29"></td></tr>
+<tr><th><b>Post      :</td><td><select size="1" name="post"><option value="0"></option><option value="1">RH</option> <option value="2">departement informatique </option> 
+<option value="3">departement electrique</option> <option value="4">departement mécanique</option>
+<option value="5">responsable de bibliothèque</option><option value="6">etc......</option><td></tD>
+
+</select></td></tr>
+</table>
+</form>
+<center><input type="button" value="envoyer"   onmouseover="verif()"> <input type="reset" value="Annuler" ></center>
+</body>
+</html>

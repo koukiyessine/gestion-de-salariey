@@ -1,0 +1,59 @@
+<html>
+<head>
+<title></title>
+</head>
+
+<html>
+<head>
+<title></title>
+</head>
+<script language="javascript">
+function verif()
+{
+var nc=document.f1.nci.value;
+/*var nmk=document.f1.nm.value;*/
+/*var pr=document.f1.pre.value;*/
+var dn=document.f1.Dn.value;
+var nt=document.f1.Nt.value;
+var em=document.f1.Ema.value;
+
+if(nc=="" || dn=="" || nt=="" || em==""){
+alert("please saisir dans les champs!");
+}
+
+if(isNaN(nt)==true || isNaN(nc)==true)
+{
+alert("donner un entier");
+}
+
+if(nc.length!=8)
+{
+alert("donner un numero de cin ni depasse pas a 8");
+}
+
+if(nt.length!=8)
+{
+alert("donner un numero de telephone ni depasse pas a 8");
+}
+
+if(em.indexOf('@') ==-1 || em.indexOf('.') ==-1){
+alert(" vous avez saisie n'est pas valable, veuillez la verifier est  merci...");
+}
+}
+</script>
+<body bgcolor="#E1BA4A">
+<center><font size="500" style="arial" color="red">inscription</font></center>
+<h1></h1>
+<form name="f1" method="post" action="inscription.php" >
+<table align="center" cellpadding="10" cellspacing="10">
+<tR><td><strong>Ncin : </strong></td><td></strong><input type="text" name="nci" size="30"></td></tr>
+<tR><td><strong>Nom    : </strong></td><td><input type="text" name="nm " size="30"></td></tr>
+<tR><td><strong>prenom : </strong></td><td><input type="text" name="Pre" size="30"></td></tr>
+<tR><td><strong>Date naissance : </strong></td><td><input type="date" name="Dn" size=30></td></tr>
+<tR><td><strong>num telephone:</strong></td><td><input type="telephone" name="Nt" size="30"></td></tr>
+<tR><td><strong>Email  :</strong></td><td><input type="email" name="Ema" size="30"></td></tr>
+<tR><td></td><td align="center" rowspan="3" colspan="3"><input type="button" value="envoyer" onclick="verif()"><input type="reset" value="Annuler"></td></tD></tr>
+</table>
+</form>
+</body>
+</html>

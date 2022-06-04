@@ -1,0 +1,13 @@
+body{
+font-family:serif;
+opacity:0.9;
+background-image:url("cyu1.png");
+background-repeat: repeat-y;
+background-position: center top;
+background-attachment: scroll;
+
+}
+p{
+color:red;
+font-size:20px;
+}

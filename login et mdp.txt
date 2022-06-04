@@ -1,0 +1,2 @@
+LOGIN = zorro - PASSWORD = tornado
+LOGIN = garcia - PASSWORD = jambon
